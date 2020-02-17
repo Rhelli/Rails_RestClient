@@ -12,7 +12,7 @@ end
 
 def ellipsis
   8.times do
-    sleep(0.5)
+    sleep(0.4)
     print "."
   end
 end
