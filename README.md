@@ -17,6 +17,8 @@ The entire interaction takes place on the command-line and returns the HTTP resp
 - Ruby 2.6.5
 - Ruby on Rails 6.0.2.1
 - RestClient 2.1.0 gem
+- Rubocop 0.79.0
+- Stickler CI
 
 ## 🗜️ Setup & Usage
 

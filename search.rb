@@ -3,7 +3,7 @@ require 'rest-client'
 def ellipsis
   8.times do
     sleep(0.4)
-    print "."
+    print '.'
   end
 end
 
@@ -14,14 +14,14 @@ def typist(string)
   end
 end
 
-def get_keywords
-  typist("What would you like to search for? ")
+def keywords
+  typist('What would you like to search for? ')
   @keywords = gets.chomp
 end
 
-def search(get_keywords)
+def search(keywords)
   url = 'https://www.bing.com/search?q='
-  @response = RestClient.get(url + "#{get_keywords}")
+  @response = RestClient.get(url + keywords.to_s)
   ellipsis
   puts
   puts @response.code
@@ -40,4 +40,4 @@ def search(get_keywords)
   puts
 end
 
-search(get_keywords)
+search(keywords)
