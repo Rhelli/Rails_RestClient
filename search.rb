@@ -1,20 +1,22 @@
 require 'rest-client'
 
-def get_keywords
-  string = "What would you like to search for? "
-  string.each_char do |i|
-    print i
-    sleep(0.03)
-  end
-  sleep(1)
-  @keywords = gets.chomp
-end
-
 def ellipsis
   8.times do
     sleep(0.4)
     print "."
   end
+end
+
+def typist(string)
+  string.each_char do |i|
+    print i
+    sleep(0.03)
+  end
+end
+
+def get_keywords
+  typist("What would you like to search for? ")
+  @keywords = gets.chomp
 end
 
 def search(get_keywords)
@@ -24,18 +26,17 @@ def search(get_keywords)
   puts
   puts @response.code
   sleep(2)
+  puts '*---------------------------------------------------------------------------------------*'
   puts @response.cookies
   sleep(2)
+  puts '*---------------------------------------------------------------------------------------*'
   puts @response.headers
   sleep(2)
+  puts '*---------------------------------------------------------------------------------------*'
   puts @response.body
   sleep(2)
-  string = 'Congratulations! Here are your web results!'
-  string.each_char do |i| 
-    print i
-    sleep(0.02)
-  end
-  sleep(1)
+  puts '*---------------------------------------------------------------------------------------*'
+  typist('Congratulations! Here are your web results!')
   puts
 end
 
