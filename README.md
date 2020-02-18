@@ -6,7 +6,7 @@ This project aims at schooling us in the art of using the 'RestClient' gem - an 
 
 ## 🏆 The Project Brief
 
-The specifications and the guide to the project can be found on the ['Warmup: RestClient'](https://www.theodinproject.com/courses/ruby-on-rails/lessons/let-s-get-building).
+The specifications and the guide to the project can be found on the ['Warmup: RestClient'](https://www.theodinproject.com/courses/ruby-on-rails/lessons/let-s-get-building) web page.
 
 As part of a two-part project (the second part to be completed individually), this first half sees us use the ruby gem 'RestClient' in order to make HTTP requests (specifically from [Bing](https://www.bing.com)) and then relay those HTTP responses to the user.
 
